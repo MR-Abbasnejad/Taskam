@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Taskam.Data</id>
+    <version>1.0.0</version>
+    <authors>Taskam.Data</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="8.0.26" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="8.0.26" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.runtimeconfig.json" target="lib\net8.0\Taskam.Data.runtimeconfig.json" />
+    <file src="C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.dll" target="lib\net8.0\Taskam.Data.dll" />
+  </files>
+</package>

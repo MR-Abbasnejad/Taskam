@@ -1,0 +1,183 @@
+﻿<Window x:Class="TaskamUI.UI.Views.Calendar.AddEventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Event"
+        Height="500"
+        Width="380"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#1E1E1E">
+
+    <Window.Resources>
+        <!-- COLORS -->
+        <SolidColorBrush x:Key="WindowBrush" Color="#1E1E1E"/>
+        <SolidColorBrush x:Key="ControlBrush" Color="#2D2D30"/>
+        <SolidColorBrush x:Key="BorderBrushDark" Color="#3E3E42"/>
+        <SolidColorBrush x:Key="HoverBrush" Color="#3A3A3D"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#1E88E5"/>
+        <SolidColorBrush x:Key="TextBrush" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="MutedTextBrush" Color="#A0A0A0"/>
+
+        <!-- TEXTBOX STYLE -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource ControlBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushDark}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,6"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- COMBOBOX ITEM STYLE -->
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Background" Value="#2D2D30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsHighlighted" Value="True">
+                    <Setter Property="Background" Value="#3A3A3D"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#1E88E5"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- COMBOBOX STYLE -->
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="{StaticResource ControlBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushDark}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- MODERN BUTTON STYLE -->
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="14"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.9"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" Value="0.8"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Border Padding="20" Background="#1E1E1E">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- HEADER -->
+            <TextBlock Grid.Row="0"
+                       Text="Create New Event"
+                       FontSize="22"
+                       FontWeight="SemiBold"
+                       Foreground="#EAEAEA"
+                       Margin="0,0,0,20"/>
+
+            <!-- TITLE -->
+            <Grid Grid.Row="1" Margin="0,0,0,12">
+                <TextBox x:Name="TitleBox"
+                         Height="38"
+                         TextChanged="TitleBox_TextChanged"/>
+
+                <TextBlock x:Name="PlaceholderText"
+                           Text="Event title"
+                           Margin="12,0,0,0"
+                           VerticalAlignment="Center"
+                           Foreground="#808080"
+                           FontSize="13"
+                           IsHitTestVisible="False"/>
+            </Grid>
+
+            <!-- DAY -->
+            <StackPanel Grid.Row="2" Margin="0,0,0,12">
+                <TextBlock Text="Day"
+                           Foreground="#EAEAEA"
+                           Margin="0,0,0,4"
+                           FontSize="13"/>
+
+                <ComboBox x:Name="DayBox"/>
+            </StackPanel>
+
+            <!-- START HOUR -->
+            <StackPanel Grid.Row="3" Margin="0,0,0,12">
+                <TextBlock Text="Start Hour"
+                           Foreground="#EAEAEA"
+                           Margin="0,0,0,4"
+                           FontSize="13"/>
+
+                <ComboBox x:Name="StartHourBox"/>
+            </StackPanel>
+
+            <!-- DURATION -->
+            <StackPanel Grid.Row="4" Margin="0,0,0,20">
+                <TextBlock Text="Duration (hours)"
+                           Foreground="#EAEAEA"
+                           Margin="0,0,0,4"
+                           FontSize="13"/>
+
+                <ComboBox x:Name="DurationBox"/>
+            </StackPanel>
+
+            <!-- BUTTONS -->
+            <Grid Grid.Row="5" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Content="Cancel"
+                        Background="#3A3A3D"
+                        Style="{StaticResource ModernButton}"
+                        Click="Cancel_Click"/>
+
+                <Button Grid.Column="2"
+                        Content="Create Event"
+                        Background="#1E88E5"
+                        Style="{StaticResource ModernButton}"
+                        Click="Create_Click"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

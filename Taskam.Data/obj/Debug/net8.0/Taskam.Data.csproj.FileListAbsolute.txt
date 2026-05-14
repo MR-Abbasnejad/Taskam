@@ -1,0 +1,14 @@
+C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.deps.json
+C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.runtimeconfig.json
+C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.dll
+C:\Users\4nonx\source\repos\Taskam.Data\bin\Debug\net8.0\Taskam.Data.pdb
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.csproj.AssemblyReference.cache
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.AssemblyInfoInputs.cache
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.AssemblyInfo.cs
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.csproj.CoreCompileInputs.cache
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.dll
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\refint\Taskam.Data.dll
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.pdb
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\Taskam.Data.genruntimeconfig.cache
+C:\Users\4nonx\source\repos\Taskam.Data\obj\Debug\net8.0\ref\Taskam.Data.dll

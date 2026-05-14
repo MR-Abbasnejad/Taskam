@@ -1,0 +1,59 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\4nonx\\source\\repos\\Taskam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45F01F29-2958-4BE0-853F-AE6DC29B95E6}|..\\TaskamUI\\TaskamUI.csproj|c:\\users\\4nonx\\source\\repos\\taskamui\\ui\\views\\calendar\\addeventwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 152,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 594,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEventWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\4nonx\\source\\repos\\TaskamUI\\UI\\Views\\Calendar\\AddEventWindow.xaml",
+              "RelativeDocumentMoniker": "..\\TaskamUI\\UI\\Views\\Calendar\\AddEventWindow.xaml",
+              "ToolTip": "C:\\Users\\4nonx\\source\\repos\\TaskamUI\\UI\\Views\\Calendar\\AddEventWindow.xaml",
+              "RelativeToolTip": "..\\TaskamUI\\UI\\Views\\Calendar\\AddEventWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-14T12:24:02.098Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 91,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 58,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
